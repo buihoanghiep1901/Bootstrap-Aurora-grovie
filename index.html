@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BOOTSTRAP 5</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/app/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <!-- NAV BAR -->
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top  ">
+                <div class="container-fluid d-flex justify-content-between">
+                    <a class="navbar-brand fs-3" href="#">Aurora Grove</a>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse d-md-flex flex-row-reverse" id="navbar">
+                          <ul class="navbar-nav fw-light  mb-2 mb-lg-0">
+                              <li class="nav-item ">
+                                  <a class="nav-link fs-4  " aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link fs-4 " aria-current="page" href="#icons">About</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link fs-4 " aria-current="page" href="#explore">Explore</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link fs-4" href="#contact">Contact</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link fs-4 " href="#" data-bs-toggle="modal" data-bs-target="#modal">Book</a>
+                              </li>
+                          </ul>
+                    </div>
+                </div>
+            </nav>
+    
+            <!-- CAROUSEL -->
+            <section id="carousel" class=" carousel slide carousel-fade" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                    <li data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Second slide"></li>
+                    <li data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Third slide"></li>
+                </ol>
+    
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active c-item"  data-bs-interval="3000">
+                        <img src="/images/main.png" class="c-img w-100 d-block" alt="First slide">
+                        <div class="carousel-caption top-0 text-uppercase mt-5">
+                            <p class=" mt-5 fs-3">the season has arrived</p>
+                            <h1 class=" mt-5  display-1 text-capitalize fw-bolder">3 Availble tours</h1>
+                            <div class=" mt-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BOOK NOW</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item"  data-bs-interval="3000">
+                        <img src="/images/dogs.png" class="c-img w-100 d-block" alt="Second slide">
+                        <div class="carousel-caption  top-0 text-uppercase mt-5">
+                            <p class="mt-5 fs-3">the season has arrived</p>
+                            <h1 class="mt-5 display-1 text-capitalize fw-bolder">3 Availble tours</h1>
+                            <div class="mt-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BOOK NOW</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item c-item"  data-bs-interval="3000">
+                        <img src="/images/winter.png" class=" c-img w-100 d-block" alt="Third slide">
+                        <div class="carousel-caption  top-0 text-uppercase mt-5">
+                            <p class="mt-5 fs-3">the season has arrived</p>
+                            <h1 class="mt-5 display-1 text-capitalize fw-bolder">3 Availble tours</h1>
+                            <div class="mt-5 btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">BOOK NOW</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </section>
+    
+            <!-- MODAL FORM BOOKING -->
+            <section class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="booking" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title" id="modalTitleId">New Booking</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Please fill out the form below and we'll get back to you as soon as possible</p>
+                            <form class="mb-3">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId" placeholder="abc@mail.com">
+                                    <label for="email" class="form-label">Email Address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" name="adult_num" id="adult_num" aria-describedby="numberHelpId" placeholder="1">
+                                    <label for="adult_num" class="form-label">Number of Adults</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" name="Number of Children" id="child-num" aria-describedby="emailHelpId" placeholder="1">
+                                    <label for="child-num" class="form-label">Number of Children</label>
+                                </div>
+                                <div class=" mb-3">
+                                    <label for="request" class="form-label">Additional Requests</label>
+                                    <textarea class="form-control" name="Additional Requests" id="request" rows="4"></textarea>
+                                </div>
+                            </form>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">BOOK NOW</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        
+        <main>
+            <section id="icons">
+                <div class="container text-center mt-5">
+                    <h3>YOU SHOW UP, WE PITCH IN THE TENT.</h3>
+                    <div class="row">
+                        <div class=" col-md-4 p-3">
+                            <img src="/images/icons/campfire.png" class="img-fluid  " alt="campfire">
+                            <h3>Amenities You Want</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vitae animi nemo in ipsa corrupti minus earum, exercitationem iste molestias eius veritatis atque, nam cumque! Neque voluptatem dignissimos consequatur officiis?</p>
+                        </div>
+                        <div class=" col-md-4 p-3">
+                            <img src="/images/icons/nature.png"class="img-fluid "  alt="nature">
+                            <h3>Amenities You Want</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste qui illo aperiam ut, eum aut excepturi minus reprehenderit fugiat modi non sunt inventore earum quos commodi blanditiis eius reiciendis? </p>
+                        </div>
+                        <div class=" col-md-4 p-3">
+                            <img src="/images/icons/tent.png"class="img-fluid "  alt="tent">
+                            <h3>Amenities You Want</h3>  
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ea, nemo distinctio non modi natus ut! Esse et sequi odio eos exercitationem dolorem repudiandae voluptatem cupiditate autem totam. Libero, unde?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="explore">
+                <div class="container text-center mt-2">
+                    <h3>WE'VE CREATED A CAMPING EXPERIENCE THAT’S TURN-KEY AND HASSLE FREE</h3>
+                    <div class="row g-3 g-md-5 p-3">
+                        <div class="col-md-6">
+                            <div class="card   border-1 border-top-0 border-dark ">
+                                <img class="card-img-top" src="images/dogs.png" alt="Title">
+                                <div class="card-body">
+                                    <h4 class="card-title text-info">EXPERIENCE</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates illo excepturi odit eaque accusantium, dolores ipsum quae, non esse harum illum fugiat eum, facere distinctio nemo suscipit autem tempora nisi?</p>
+                                    <div class="btn btn-outline-info">Go somewhere</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="card border-1 border-top-0 border-dark">
+                                <img class="card-img-top" src="images/winter.png" alt="Title">
+                                <div class="card-body">
+                                    <h4 class="card-title text-info">EXPERIENCE</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates illo excepturi odit eaque accusantium, dolores ipsum quae, non esse harum illum fugiat eum, facere distinctio nemo suscipit autem tempora nisi?</p>
+                                    <div class="btn btn-outline-info">Go somewhere</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="quotes">
+                <div class="container text-center mt-5">
+                    <h3>WHAT OUR HAPPY CAMPERS ARE SAYING</h3>
+                    <div class="row">
+                        <div class="col-md-4 my-2">
+                            <i class="fas fa-quote-left fa-2x text-info mb-3"></i>
+                            <blockquote class="blockquote">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">Bruce Wayne</footer>
+                            </blockquote>
+                        </div>
+        
+                        <div class="col-md-4 my-2">
+                            <i class="fas fa-quote-left fa-2x text-info mb-3"></i>
+                            <blockquote class="blockquote">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">Peter Parker</footer>
+                            </blockquote>
+                        </div>
+        
+                        <div class="col-md-4 my-2">
+                            <i class="fas fa-quote-left fa-2x text-info mb-3"></i>
+                            <blockquote class="blockquote">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">Tony Stark</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container  mt-5">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div id="main-carousel" class="carousel slide" data-bs-ride="carousel"> 
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active" data-bs-interval="3000">
+                                        <img src="/images/slider/caribou.png" class="w-100 d-block " alt="First slide">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img src="/images/slider/coffee.png" class="w-100 d-block " alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img src="/images/slider/fire.png" class="w-100 d-block " alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="3000">
+                                        <img src="/images/slider/trees.png" class="w-100 d-block " alt="fourth slide">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h3 class="text-center">CAMPING MADE COZY</h3>
+                            <p class="fs-4 fw-lighter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptate et 
+                                sapiente quos, quisquam libero cum est vero explicabo cupiditate consequatur eligendi optio magni soluta atque corrupti alias consectetur totam.</p>
+                            <a class="text-decoration-none text-info" href="#">See for yourself <i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container text-center mt-5">
+                    <h3>WHAT OTHERS ARE SAYING</h3>
+                    <h5 class="text-info">#AURORAGROVE</h5>
+        
+                    <div class="row mt-4 g-3 g-sm-4">
+                        <div class="col-6 col-lg-3 ">
+                            <img src="images/gallery/social1.png" alt="Social 1" class="img-fluid">
+                        </div>
+                        
+                        <div class="col-6 col-lg-3 ">
+                            <img src="images/gallery/social2.png" alt="Social 2" class="img-fluid">
+                        </div>
+        
+                        <div class="col-6 col-lg-3 ">
+                            <img src="images/gallery/social3.png" alt="Social 3" class="img-fluid">
+                        </div>
+        
+                        <div class="col-6 col-lg-3 ">
+                            <img src="images/gallery/social4.png" alt="Social 4" class="img-fluid">
+                        </div>
+        
+                        <div class="col-6 col-lg-3 ">
+                            <img src="images/gallery/social5.png" alt="Social 5" class="img-fluid">
+                        </div>
+        
+                        <div class="col-6 col-lg-3 ">
+                            <img src="images/gallery/social6.png" alt="Social 6" class="img-fluid">
+                        </div>
+        
+                        <div class="col-6 col-lg-3 ">
+                            <img src="images/gallery/social7.png" alt="Social 7" class="img-fluid">
+                        </div>
+        
+                        <div class="col-6 col-lg-3 ">
+                            <img src="images/gallery/social8.png" alt="Social 8" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section id="contact">
+                <div class="container-fluid text-center mt-5 bg-dark text-white p-4 ">
+                    <p class="lead ">JOIN OUR NEWSLETTER FOR DEALS AND UPDATES AND OFFERS</p>
+                    <div class="row justify-content-center  align-items-center">
+                        <div class="col-10 col-sm-8 col-md-6 col-lg-4">
+                            <div class="input-group ">
+                              <input type="email"class="form-control" name="" id="" aria-describedby="helpId" placeholder="Your email">
+                              <div class="btn btn-info">Join now</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="footer" class="bg-dark  border-top  text-center p-2">
+                <ul class=" nav  justify-content-center ">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link-light">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link-light">EXPERIENCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link-light">EXPLORE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link-light">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link-light">BOOK NOW</a>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+        
+        
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+/* body {
+    font-family: "Raleway", sans-serif;
+} */
+
+/* .navbar{
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background: transparent;
+}
+*/
+#carousel{
+    /* position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 1; */
+    margin-top:67.81px
+} 
+.c-item{
+    height: 480px;
+}
+.c-img{
+    height: 100%;
+    object-fit:cover;
+    filter: brightness(0.9);
+}
+img[src="/images/main.png"]{
+    object-position: center bottom;
+}
+
+
